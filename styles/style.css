@@ -1,0 +1,131 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+            /*utilities*/
+ *{
+    margin: 0;
+    padding: 0;
+ }           
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #e2cbe0;
+    padding: 0;
+   
+} 
+main{
+    display: flex;
+    justify-content: center;
+     
+}
+.container{
+    background-color: #ffff;
+    width: 870px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+    
+}
+        /*header start*/
+.header{
+
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+
+}
+.header img{
+    width: 55px;
+    height: 55px;
+}
+.header a,p{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px ;
+}
+.header .icon,.nav-menu{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.header .icon{
+    padding-left: 19%;
+}
+.header .nav-menu{
+    padding-right: 5%;
+}
+      /*header end*/
+            /*top players style*/
+    .text-player{
+        font-size: 1.5rem;
+        color: indigo;
+    }
+   
+.players{
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player-name{
+    margin-left: 10px;
+}
+                /* top blog start */  
+   
+ .blog{
+    display:grid;
+    grid-template-columns: auto auto;
+ }               
+ .blog-i img{
+    width: 150px;
+    height: 100px;
+
+ }
+ .blog-i{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+ }
+ .b-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+ span{
+    color: rgb(103, 8, 235);
+    font-weight: bold;
+ }
+        /*footer*/
+ 
+ .footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+ }  
+ .course{
+    display: grid;
+    grid-template-columns: auto auto auto;
+ }   
+ .cou-img img{
+    width: 200px;
+    height: 100px;
+ }  
+.cou-img p{
+    color: rgb(226, 26, 109);
+    font-size: .9rem;
+    font-weight: bold;
+}
+.cou-img span{
+    background-color: rgb(220, 130, 168);
+    padding:0 7px;
+    border-radius: 20px;
+    
+}

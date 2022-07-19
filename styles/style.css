@@ -66,6 +66,7 @@ main{
   
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding: 20px;
 
 }
 .player img{
@@ -84,6 +85,7 @@ main{
  .blog{
     display:grid;
     grid-template-columns: auto auto;
+    padding: 20px;
  }               
  .blog-i img{
     width: 150px;
@@ -98,6 +100,7 @@ main{
  .b-text{
     font-size: 1.2rem;
     font-weight: bold;
+    color: black;
  }
  span{
     color: rgb(103, 8, 235);
@@ -113,11 +116,15 @@ main{
  .course{
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 20px;
  }   
  .cou-img img{
     width: 200px;
     height: 100px;
  }  
+ .cou-img{
+    padding:15px 0;
+ }
 .cou-img p{
     color: rgb(226, 26, 109);
     font-size: .9rem;
@@ -129,3 +136,35 @@ main{
     border-radius: 20px;
     
 }
+        /*media queries*/
+
+  @media screen and (max-width:667px){
+    .players, .blog, .course{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .player, .blog-i{
+        flex-direction: column;
+    }
+    .container{
+        
+        width: 100%;
+        padding: 10px;
+    }
+    .header{
+        width: 100%;
+    }  
+.header .icon,.nav-menu{
+    margin: 0;
+    padding: 0 ;
+}  
+  }
+  
+  @media screen and (min-width:667px) and ( max-width: 992px){
+    .players, .blog, .course{
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+
+    }
+  }
+  
